@@ -16,7 +16,7 @@ def load_ml_components(fp):
 
 # Variables and Constants
 DIRPATH = os.path.dirname(os.path.realpath(__file__))
-ml_core_fp = os.path.join(DIRPATH, 'Assets', 'Export', 'ml_components.pkl')
+ml_core_fp = os.path.join(DIRPATH, 'Assets', 'ml_components.pkl')
 
 # Load the Machine Learning components
 ml_components_dict = load_ml_components(fp=ml_core_fp)
