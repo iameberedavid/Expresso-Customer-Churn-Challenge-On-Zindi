@@ -1,4 +1,7 @@
 streamlit
+gradio
+fastapi
+docker
 pandas
 scikit-learn
 tableau
