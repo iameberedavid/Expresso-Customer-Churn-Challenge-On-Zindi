@@ -8,27 +8,30 @@ Welcome to the **Expresso Customer Churn Challenge On Zindi**. The primary goal 
 
 ## Technologies
 
+## Technologies
+
 ![Streamlit Version](https://img.shields.io/badge/Streamlit-Latest-brightgreen)
 ![App Development](https://img.shields.io/badge/App-Development-yellow)
-![MIT licensed](https://img.shields.io/badge/license-mit-blue?style=for-the-badge&logo=appveyor)
+![MIT licensed](https://img.shields.io/badge/license-mit-blue?style=flat)
 ![Python Framework](https://img.shields.io/badge/Python-Framework-blueviolet)
 
 - ![Gradio Version](https://img.shields.io/badge/Gradio-Latest-brightgreen)
 - ![Machine Learning](https://img.shields.io/badge/Machine-Learning-yellow)
-- ![MIT licensed](https://img.shields.io/badge/license-mit-blue?style=for-the-badge&logo=appveyor)
-- ![Python Framework](https://img.shields.io/badge/Python-Framework-blueviolet)
+- ![MIT licensed](https://img.shields.io/badge/license-mit-blue?style=flat)
+- ![Python Framework](https://img.shields.so/badge/Python-Framework-blueviolet)
 
 - ![FastAPI Version](https://img.shields.io/badge/FastAPI-Latest-brightgreen)
 - ![Web API](https://img.shields.io/badge/Web-API-yellow)
-- ![MIT licensed](https://img.shields.io/badge/license-mit-blue?style=for-the-badge&logo=appveyor)
+- ![MIT licensed](https://img.shields.io/badge/license-mit-blue?style=flat)
 - ![Python Framework](https://img.shields.io/badge/Python-Framework-blueviolet)
 
 - ![HuggingFace Transformers](https://img.shields.io/badge/HuggingFace-Latest-brightgreen)
 - ![NLP](https://img.shields.io/badge/Natural-Language-Processing-yellow)
-- ![MIT licensed](https://img.shields.io/badge/license-mit-blue?style=for-the-badge&logo=appveyor)
+- ![MIT licensed](https://img.shields.io/badge/license-mit-blue?style=flat)
 - ![Machine Learning](https://img.shields.io/badge/Machine-Learning-blueviolet)
 
 - ![Docker Version](https://img.shields.io/badge/Docker-Latest-brightgreen)
 - ![Containerization](https://img.shields.io/badge/Containerization-yellow)
-- ![MIT licensed](https://img.shields.io/badge/license-mit-blue?style=for-the-badge&logo=appveyor)
+- ![MIT licensed](https://img.shields.io/badge/license-mit-blue?style=flat)
 - ![DevOps](https://img.shields.io/badge/DevOps-blueviolet)
+
