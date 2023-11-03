@@ -8,10 +8,10 @@ Welcome to the **Expresso Customer Churn Challenge On Zindi**. The primary goal 
 
 ## Technologies
 
-- ![Streamlit Version](https://img.shields.io/badge/Streamlit-Latest-brightgreen)
-- ![App Development](https://img.shields.io/badge/App-Development-yellow)
-- ![MIT licensed](https://img.shields.io/badge/license-mit-blue?style=for-the-badge&logo=appveyor)
-- ![Python Framework](https://img.shields.io/badge/Python-Framework-blueviolet)
+![Streamlit Version](https://img.shields.io/badge/Streamlit-Latest-brightgreen)
+![App Development](https://img.shields.io/badge/App-Development-yellow)
+![MIT licensed](https://img.shields.io/badge/license-mit-blue?style=for-the-badge&logo=appveyor)
+![Python Framework](https://img.shields.io/badge/Python-Framework-blueviolet)
 
 - ![Gradio Version](https://img.shields.io/badge/Gradio-Latest-brightgreen)
 - ![Machine Learning](https://img.shields.io/badge/Machine-Learning-yellow)
