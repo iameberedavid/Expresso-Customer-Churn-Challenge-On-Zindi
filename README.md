@@ -2,18 +2,20 @@
 
 ## Technologies
 
-![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Data Analysis](https://img.shields.io/badge/Data-Analysis-blue)
 ![Machine Learning](https://img.shields.io/badge/Machine-Learning-blue)
 ![App Development](https://img.shields.io/badge/App-Development-brightgreen)
+![Containerization](https://img.shields.io/badge/Containerization-purple)
+![DevOps](https://img.shields.io/badge/DevOps-orange)
+![MIT](https://img.shields.io/badge/MIT-License-red?style=red)
+- 
+![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.27.2-brightgreen)
 ![Gradio](https://img.shields.io/badge/Gradio-3.50.2-brightgreen)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.104.0-brightgreen)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-0.17.3-yellow)
-![Containerization](https://img.shields.io/badge/Containerization-purple)
-![Docker](https://img.shields.io/badge/Docker-purple)
-![DevOps](https://img.shields.io/badge/DevOps-orange)
-![MIT](https://img.shields.io/badge/MIT-License-red?style=red)
+![Docker](https://img.shields.io/badge/Docker-24.0.6-purple)
+
 
 ## Project Description
 
