@@ -8,8 +8,7 @@
 ![Containerization](https://img.shields.io/badge/Containerization-purple)
 ![DevOps](https://img.shields.io/badge/DevOps-orange)
 ![MIT](https://img.shields.io/badge/MIT-License-red?style=red)
-- 
-![Python](https://img.shields.io/badge/Python-3.11-blue)
+- ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.27.2-brightgreen)
 ![Gradio](https://img.shields.io/badge/Gradio-3.50.2-brightgreen)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.104.0-brightgreen)
