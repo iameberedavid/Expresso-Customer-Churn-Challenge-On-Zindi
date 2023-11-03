@@ -7,7 +7,7 @@
 ![App Development](https://img.shields.io/badge/App-Development-blue)
 ![Containerization](https://img.shields.io/badge/Containerization-blue)
 ![DevOps](https://img.shields.io/badge/DevOps-blue)
-![MIT](https://img.shields.io/badge/MIT-License-red?style=blue)
+![MIT](https://img.shields.io/badge/MIT-License-blue?style=flat)
 
 ![Python](https://img.shields.io/badge/Python-3.11-brightgreen)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.27.2-brightgreen)
