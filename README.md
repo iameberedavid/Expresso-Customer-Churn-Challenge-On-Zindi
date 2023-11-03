@@ -10,29 +10,17 @@ Welcome to the **Expresso Customer Churn Challenge On Zindi**. The primary goal 
 
 ## Technologies
 
-![Python 3.11](https://img.shields.io/badge/Python-3.11-blueviolet)
-![Machine Learning](https://img.shields.io/badge/Machine-Learning-yellow)
-![Streamlit 1.27.2](https://img.shields.io/badge/Streamlit-Latest-brightgreen)
-![App Development](https://img.shields.io/badge/App-Development-yellow)
-![MIT licensed](https://img.shields.io/badge/license-mit-blue?style=flat)
-
-- ![Gradio Version](https://img.shields.io/badge/Gradio-Latest-brightgreen)
-- ![Machine Learning](https://img.shields.io/badge/Machine-Learning-yellow)
-- ![MIT licensed](https://img.shields.io/badge/license-mit-blue?style=flat)
-- ![Python Framework](https://img.shields.so/badge/Python-Framework-blueviolet)
-
-- ![FastAPI Version](https://img.shields.io/badge/FastAPI-Latest-brightgreen)
-- ![Web API](https://img.shields.io/badge/Web-API-yellow)
-- ![MIT licensed](https://img.shields.io/badge/license-mit-blue?style=flat)
-- ![Python Framework](https://img.shields.io/badge/Python-Framework-blueviolet)
-
-- ![HuggingFace Transformers](https://img.shields.io/badge/HuggingFace-Latest-brightgreen)
-- ![NLP](https://img.shields.io/badge/Natural-Language-Processing-yellow)
-- ![MIT licensed](https://img.shields.io/badge/license-mit-blue?style=flat)
-- ![Machine Learning](https://img.shields.io/badge/Machine-Learning-blueviolet)
-
-- ![Docker Version](https://img.shields.io/badge/Docker-Latest-brightgreen)
-- ![Containerization](https://img.shields.io/badge/Containerization-yellow)
-- ![MIT licensed](https://img.shields.io/badge/license-mit-blue?style=flat)
-- ![DevOps](https://img.shields.io/badge/DevOps-blueviolet)
+![Python](https://img.shields.io/badge/Python-3.11-blueviolet)
+![Data Analysis](https://img.shields.so/badge/Data-Analysis-blue)
+![Machine Learning](https://img.shields.io/badge/Machine-Learning-green)
+![App Development](https://img.shields.io/badge/App-Development-brightgreen)
+![Streamlit](https://img.shields.io/badge/Streamlit-Latest-yellow)
+![Gradio](https://img.shields.io/badge/Gradio-Latest-yellow)
+![Web API](https://img.shields.io/badge/Web-API-yellow)
+![FastAPI](https://img.shields.io/badge/FastAPI-Latest-yellow)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-Latest-purple)
+![Containerization](https://img.shields.io/badge/Containerization-peach)
+![Docker Version](https://img.shields.io/badge/Docker-Latest-violet)
+![DevOps](https://img.shields.io/badge/DevOps-orange)
+![MIT](https://img.shields.io/badge/MIT-License-blue?style=flat)
 
