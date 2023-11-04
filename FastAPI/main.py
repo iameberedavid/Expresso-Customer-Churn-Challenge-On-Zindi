@@ -1,6 +1,6 @@
 # Load the key libraries
 from fastapi import FastAPI
-import uvicorn
+from fastapi import HTTPException
 from typing import Union, Literal
 import pandas as pd
 import pickle, os
@@ -30,7 +30,11 @@ encoder = ml_components_dict['encoder']
 model = ml_components_dict['model']
 
 # Input Modelling
-class PredictionRequest(BaseModel):
+class ChurnPrediction(BaseModel):
+    execution_msg: str
+    execution_code: int
+    predictions: Union[list, None]
+
     ## Input features
     TENURE: str
     MONTANT: float
@@ -54,8 +58,8 @@ async def root():
         "This app predicts whether a telecommunication network's customer will churn or not. "
     }
 
-@app.post('/classify')
-async def predict_churn(data: PredictionRequest):
+@app.post('/classify', response_model=ChurnPrediction)
+async def predict_churn(data: ChurnPrediction):
     try:
         # Creation of Dataframe
         df = pd.DataFrame(
@@ -131,14 +135,12 @@ async def predict_churn(data: PredictionRequest):
         code = 1
         pred = df.to_dict('records')
 
-    except Exception as e:
-        print(f'Something went wrong during the Churn prediction: {str(e)}')
-        msg = 'Execution went wrong'
-        code = 0
-        pred = None
+        result = {'execution_msg': 'Execution went fine', 'execution_code': 1, 'predictions': df.to_dict('records')}
+        return result
 
-    result = {'execution_msg': msg, 'execution_code': code, 'predictions': pred}
-    return result
+    except Exception as e:
+        # Error handling with HTTPException
+        raise HTTPException(status_code=500, detail=f'Something went wrong during the Churn prediction: {str(e)}')
 
 if __name__ == '__main__':
     uvicorn.run('main:app', reload=True)
