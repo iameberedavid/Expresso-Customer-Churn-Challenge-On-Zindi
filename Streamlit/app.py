@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import os
 import pickle
+import catboost
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 from sklearn.preprocessing import LabelEncoder, StandardScaler
