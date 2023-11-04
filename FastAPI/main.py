@@ -118,7 +118,7 @@ async def predict_churn(data: PredictionRequest):
         df['predicted_label'] = prediction.argmax(axis=-1)
 
         # Define a mapping from class labels to human-readable labels
-        mapping = {0: 'the customer is not likely to churn.', 1: ' the customer is likely to churn.'}
+        mapping = {0: 'the customer is not likely to churn', 1: ' the customer is likely to churn'}
 
         # Replace the numeric predicted labels with human-readable labels using the mapping
         df['predicted_label'] = [mapping[x] for x in df['predicted_label']]
@@ -128,7 +128,7 @@ async def predict_churn(data: PredictionRequest):
 
 
         # Print results
-        print(f"The customer data reveals that : {df['predicted_label'].values[0]}")
+        print(f"The customer data reveals that : {df['predicted_label'].values[0]}.")
         msg = 'Execution went fine'
         code = 1
         pred = df.to_dict('records')
