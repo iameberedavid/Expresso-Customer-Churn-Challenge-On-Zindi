@@ -26,7 +26,7 @@ ml_components_dict = load_ml_components(fp=ml_core_fp)
 imputer = ml_components_dict['imputer']
 scaler = ml_components_dict['scaler']
 encoder = ml_components_dict['encoder']
-best_model = ml_components_dict['model']
+model = ml_components_dict['model']
 
 # Preprocess the data
 def preprocess_data(df, imputer, encoder, scaler):
@@ -117,11 +117,13 @@ def main():
         df = preprocess_data(df, imputer, scaler, encoder)
 
         # Make predictions using the loaded best model
-        prediction = best_model.predict_proba(df)
-        prob_churn = float(prediction[0][1])
-
+        prediction = model.predict(df)
+        
         # Display the prediction
-        st.write(f'Customer Churn Probability: {prob_churn}')
+        if prediction[0] == 1:
+            st.write("Customer is likely to churn.")
+        else:
+            st.write("Customer is not likely to churn.")
 
 if __name__ == '__main__':
     main()
