@@ -126,7 +126,6 @@ async def predict_churn(data: PredictionRequest):
         # Store the confidence score percentage in the 'confidence_score' column
         df['confidence_score'] = f'{confidence_score_percentage}%'
 
-
         # Print results
         print(f"The customer data reveals that : {df['predicted_label'].values[0]}.")
         msg = 'Execution went fine'
