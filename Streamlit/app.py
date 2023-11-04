@@ -117,7 +117,7 @@ def main():
         # Preprocess the input data
         df = preprocess_data(df, imputer, scaler, encoder)
 
-        # Make predictions using the loaded model
+        # Make prediction using the loaded model
         prediction = model.predict(df)
         
         # Display the prediction
