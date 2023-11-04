@@ -71,8 +71,7 @@ async def predict_churn(data: PredictionRequest):
                 'ORANGE': [data.ORANGE],
                 'TIGO': [data.TIGO],
                 'REGULARITY': [data.REGULARITY],
-                'FREQ_TOP_PACK': [data.FREQ_TOP_PACK],
-                'Insurance': [sepsis.Insurance]
+                'FREQ_TOP_PACK': [data.FREQ_TOP_PACK]
             }
         )
         print(f'[Info] Input data as DataFrame:\n{df.to_markdown()}')
