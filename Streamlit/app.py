@@ -24,7 +24,7 @@ ml_core_fp = os.path.join(DIRPATH, 'Assets', 'ml_components.pkl')
 ml_components_dict = load_ml_components(fp=ml_core_fp)
 
 # Extract the ML components
-imputer = ml_components_dict['imputer']
+#imputer = ml_components_dict['imputer']
 scaler = ml_components_dict['scaler']
 encoder = ml_components_dict['encoder']
 model = ml_components_dict['model']
@@ -64,10 +64,31 @@ def preprocess_data(df, imputer, encoder, scaler):
     return processed_df
 
 def main():
-    st.set_page_config(page_title='Customer Churn Prediction App', page_icon='📊', layout='wide')
+    st.set_page_config(page_title='Customer Churn Prediction App', page_icon='⚠', layout='wide')
     st.title('Customer Churn Prediction App')
-    st.markdown(
-    """
+
+    st.write("This app predicts whether a telecommunication network's customer will churn or not. "
+             "It requires the following customer data to make predictions.")
+    
+    columns = st.columns(2)
+
+    with columns[0]:
+        st.markdown("""1. TENURE: The customer's duration on the network.""")
+        st.markdown("""2. MONTANT: The customer's top-up amount.""")
+        st.markdown("""3. FREQUENCE_RECH: The number of times the customer recharged.""")
+        st.markdown("""4. REVENUE: Monthly income of each customer.""")
+        st.markdown("""5. ARPU_SEGMENT: Customer's average income over 90 days.""")
+        st.markdown("""6. FREQUENCE: The number of times the customer made an income.""")
+
+    with columns[1]:
+        st.markdown("""7. DATA_VOLUME: The customer's number of connections.""")
+        st.markdown("""8. ON_NET: The customer's calls within Expresso network.""")
+        st.markdown("""9. ORANGE: The customer's calls to Orange network.""")
+        st.markdown("""10. TIGO: The customer's calls to Tigo network.""")
+        st.markdown("""11. REGULARITY: The number of times the customer has been active for 90 days.""")
+        st.markdown("""12. FREQ_TOP_PACK: The number of times the customer activated top pack packages.""")
+
+    st.markdown("""
 <style>
     body {
         background-color: #008080;  /* Blue background color */
@@ -75,9 +96,7 @@ def main():
     }
 </style>
     """,
-    unsafe_allow_html=True
-)
-
+    unsafe_allow_html=True)
 
     # User input section
     TENURE = st.selectbox('TENURE', ['K > 24 month', 'E 6-9 month', 'H 15-18 month', 'G 12-15 month',
