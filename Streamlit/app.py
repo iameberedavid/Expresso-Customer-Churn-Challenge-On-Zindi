@@ -24,7 +24,7 @@ ml_core_fp = os.path.join(DIRPATH, 'Assets', 'ml_components.pkl')
 ml_components_dict = load_ml_components(fp=ml_core_fp)
 
 # Extract the ML components
-#imputer = ml_components_dict['imputer']
+imputer = ml_components_dict['imputer']
 scaler = ml_components_dict['scaler']
 encoder = ml_components_dict['encoder']
 model = ml_components_dict['model']
@@ -36,27 +36,19 @@ def preprocess_data(df, imputer, encoder, scaler):
     categorical_features = ['TENURE']
 
     # Impute missing values
-    imputed_df = imputer.transform(df)
+    imputed_df = imputer.transform(df[numerical_features])
 
-    # Separate the categorical and numeric features
-    numerical_df = imputed_df[numerical_features]
-    categorical_df = imputed_df[categorical_features]
-
-    # Scale the numeric features
-    scaled_df = scaler.transform(numerical_df)
-
-    # Encode the categorical features
-    encoded_df = encoder.transform(categorical_df)
-
-    # Concatenate the encoded categorical and scaled numeric features
-    processed_df = np.concatenate((scaled_df, encoded_df), axis=1)
-
-    # Get the names of columns after preprocessing
-    encoded_feature_names = encoder.get_feature_names_out(categorical_features)
-    all_feature_names = numerical_features + list(encoded_feature_names)
+    # Scale the numerical features
+    scaled_df = scaler.transform(imputed_df)
 
     # Convert the NumPy array to a pandas DataFrame
-    processed_df = pd.DataFrame(processed_df, columns=all_feature_names)
+    scaled_df = pd.DataFrame(scaled_df, columns=numerical_features)
+
+    # Encode the categorical feature
+    categorical_df = pd.DataFrame(encoder.transform(df[categorical_features]), columns=categorical_features)
+
+    # Concatenate the encoded categorical and scaled numerical features
+    processed_df = pd.concat([categorical_df, scaled_df], axis=1)
 
     st.write('Columns in the DataFrame:', processed_df.columns.tolist())
     st.write('DataFrame Shape:', processed_df.shape)
@@ -131,19 +123,20 @@ def main():
             'FREQ_TOP_PACK': [FREQ_TOP_PACK],
         }
 
-        df = pd.DataFrame(input_data)
+        # Convert the user input to a DataFrame with a single row
+        df = pd.DataFrame([input_data])
 
-        # Preprocess the input data
-        df = preprocess_data(df, imputer, scaler, encoder)
+        # Preprocess the user input data
+        processed_data = preprocess_data(df, imputer, encoder, scaler)
 
         # Make prediction using the loaded model
-        prediction = model.predict(df)
-        
+        prediction = model.predict(processed_data)
+
         # Display the prediction
         if prediction[0] == 1:
-            st.write("Customer is likely to churn.")
+            st.write('This customer is likely to churn.')
         else:
-            st.write("Customer is not likely to churn.")
+            st.write('This customer is not likely to churn.')
 
 if __name__ == '__main__':
     main()

@@ -13,7 +13,7 @@ with open(ml_core_fp, "rb") as f:
     ml_components_dict = pickle.load(f)
 
 # Extract the ML components
-#imputer = ml_components_dict['imputer']
+imputer = ml_components_dict['imputer']
 scaler = ml_components_dict['scaler']
 encoder = ml_components_dict['encoder']
 model = ml_components_dict['model']
@@ -45,39 +45,32 @@ def predict_churn(TENURE, MONTANT, FREQUENCE_RECH, REVENUE, ARPU_SEGMENT, FREQUE
     # Create a DataFrame from the input data
     df = pd.DataFrame(data)
 
-    # Impute missing values
-    imputed_df = imputer.transform(df)
-
-    # Separate the categorical and numeric features
+    # Separate the categorical and numerical features
     numerical_features = ['MONTANT', 'FREQUENCE_RECH', 'REVENUE', 'ARPU_SEGMENT', 'FREQUENCE', 'DATA_VOLUME',
                           'ON_NET', 'ORANGE', 'TIGO', 'REGULARITY', 'FREQ_TOP_PACK']
     categorical_features = ['TENURE']
 
-    numerical_df = imputed_df[numerical_features]
-    categorical_df = imputed_df[categorical_features]
+    # Impute missing values
+    imputed_df = imputer.transform(df[numerical_features])
 
-    # Scale the numeric features
-    scaled_df = scaler.transform(numerical_df)
-
-    # Encode the categorical features
-    encoded_df = encoder.transform(categorical_df)
-
-    # Concatenate the encoded categorical and scaled numeric features
-    processed_df = np.concatenate((scaled_df, encoded_df), axis=1)
-
-    # Get the names of columns after preprocessing
-    encoded_feature_names = encoder.get_feature_names_out(categorical_features)
-    all_feature_names = numerical_features + list(encoded_feature_names)
+    # Scale the numerical features
+    scaled_df = scaler.transform(imputed_df)
 
     # Convert the NumPy array to a pandas DataFrame
-    processed_df = pd.DataFrame(processed_df, columns=all_feature_names)
+    scaled_df = pd.DataFrame(scaled_df, columns=numerical_features)
+
+    # Encode the categorical feature
+    categorical_df = pd.DataFrame(encoder.transform(df[categorical_features]), columns=categorical_features)
+
+    # Concatenate the encoded categorical and scaled numerical features
+    processed_df = pd.concat([categorical_df, scaled_df], axis=1)
     
     # Make prediction using the loaded model
     prediction = model.predict(processed_df)
     if prediction[0] == 1:
-        result = 'Customer is likely to churn.'
+        result = 'This customer is likely to churn.'
     else:
-        result = 'Customer is not likely to churn.'
+        result = 'This customer is not likely to churn.'
     return result
 
 # Define Gradio inputs
