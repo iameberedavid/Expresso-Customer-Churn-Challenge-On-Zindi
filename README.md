@@ -29,23 +29,23 @@ Below is a preview showcasing some features of the notebook:
 
 <div style="display: flex; align-items: center;">
     <div style="flex: 33.33%; text-align: center;">
-        <p style="margin-top: 20px;">Overall Churn Rate Of The Telecommunication Network</p>
+        <p>Overall Churn Rate Of The Telecommunication Network</p>
         <img src="Images/Readmepics/Overall Churn Rate Of The Telecommunication Network.png" alt="Top" width="90%"/>
     </div>
     <div style="flex: 33.33%; text-align: center;">
-        <p style="margin-top: 20px;">Churn Rate by Tenure</p>
+        <p>Churn Rate by Tenure</p>
         <img src="Images/Readmepics/Churn Rate by Tenure.png" alt="Middle" width="90%"/>
         </div>
     <div style="flex: 33.33%; text-align: center;">
-        <p style="margin-top: 20px;">Churn Rate by Region</p>
+        <p>Churn Rate by Region</p>
         <img src="Images/Readmepics/Churn Rate by Region.png" alt="Middle" width="90%"/>
         </div>
     <div style="flex: 33.33%; text-align: center;">
-        <p style="margin-top: 20px;">Confusion Matrix of the Best Model</p>
+        <p>Confusion Matrix of the Best Model</p>
         <img src="Images/Readmepics/Confusion Matrix of the Best Model.png" alt="Middle" width="90%"/>
     </div>
     <div style="flex: 33.33%; text-align: center;">
-        <p style="margin-top: 20px;">Precision-Recall Curve of the Best Model</p>
+        <p>Precision-Recall Curve of the Best Model</p>
         <img src="Images/Readmepics/Precision-Recall Curve of the Best Model.png" alt="Bottom" width="90%"/>
     </div>
 </div>
@@ -116,7 +116,7 @@ Results: The app will display whether the customer is likely to churn or not bas
 
 | Name                | LinkedIn Profile                                                                                                                                                                                                                                   | Medium Profile |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- |
-| Chidiebere David Ogbonna | [Chidiebere David Ogbonna](https://www.linkedin.com/in/chidieberedavidogbonna/) |[Building an Interactive Telco Churn Prediction App with Gradio and Hugging Face](https://eberedavid.medium.com/embedding-telco-churn-machine-learning-model-in-gradio-1fb9df22d4a2)|
+| Chidiebere David Ogbonna | [LinkedIn](https://www.linkedin.com/in/chidieberedavidogbonna/) |[Medium](https://eberedavid.medium.com)|
 |                          |                                                                                                                                                                                                                                            |        |
 
 ## Acknowledgments
