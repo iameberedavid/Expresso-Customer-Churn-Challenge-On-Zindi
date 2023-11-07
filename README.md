@@ -114,19 +114,13 @@ Results: The app will display whether the customer is likely to churn or not bas
 
 ## Authors
 
-| Name                | Profile                                                                                                                                                                                                                                   | Articles |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- |
-| Chidiebere David Ogbonna | [LinkedIn](https://www.linkedin.com/in/chidieberedavidogbonna/) |[Medium](https://eberedavid.medium.com)|
-|                          |                                                                                                                                                                                                                                            |        |
-
-
-| Name                | Profile                                                                                                                                                                   | Portfolio | Articles |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | --------- |
-| Chidiebere David Ogbonna | [LinkedIn](https://www.linkedin.com/in/chidieberedavidogbonna/) | [GitHub](https://github.com/iameberedavid) | [Medium](https://eberedavid.medium.com) |
-| John Smith | [LinkedIn](https://www.linkedin.com/in/johnsmith/) |  | [Medium](https://medium.com/johnsmith) |
-| Jane Doe | [LinkedIn](https://www.linkedin.com/in/janedoe/) |  | [Medium](https://medium.com/janedoe) |
-| Alice Johnson | [LinkedIn](https://www.linkedin.com/in/alicejohnson/) |  | [Medium](https://medium.com/alicejohnson) |
-| Alice Johnson | [LinkedIn](https://www.linkedin.com/in/alicejohnson/) |  | [Medium](https://medium.com/alicejohnson) |
+| Name | Profile | Portfolio | Articles | Contact |
+| ---- | ------- | --------- | -------- | ------- |
+| Chidiebere David Ogbonna | [LinkedIn](https://www.linkedin.com/in/chidieberedavidogbonna/) | [GitHub](https://github.com/iameberedavid) | [Medium](https://eberedavid.medium.com) |  |
+| George Manuel | [LinkedIn](https://www.linkedin.com/in/johnsmith/) | [GitHub](https://github.com/George-Manuel) |  |  |
+| Prince Agyei Asamoah | [LinkedIn](https://gh.linkedin.com/in/prince-asamoah) | [GitHub](https://github.com/Princeasamoah) | [Medium](https://medium.com/janedoe) |  |
+| Alice Johnson | [LinkedIn](https://www.linkedin.com/in/alicejohnson/) | [GitHub]() | [Medium](https://medium.com/alicejohnson) |  |
+| Alice Johnson | [LinkedIn](https://www.linkedin.com/in/alicejohnson/) | [GitHub]() | [Medium](https://medium.com/alicejohnson) |  |
 
 ## Acknowledgments
 
