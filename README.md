@@ -50,27 +50,107 @@ Below is a preview showcasing some features of the notebook:
     </div>
 </div>
 
-## Prerequisites for the Apps and Web API
+## Project Overview
 
-Ensure that you install the following libraries in your Python environment or virtual environment:
+The project includes the following stages:
 
-* Gradio
-* Streamlit
-* FastAPI
-* Tabulate
-* Uvicorn
-* Pandas
-* Logistic Regression
+### 1. Data Collection
 
-The libraries can be installed using the following command:
+- The datasets were downloaded directly from Zindi. They were not uploaded to the Github repository as it is against Zindi's rules to publicly upload competition datasets.
 
-![Installations](Images/Readmepics/Installations.png)
+### 2. Data Loading
+
+- Leveraging `pandas` for CSV files
+
+### 3. Exploratory Data Analysis (EDA)
+
+- Checking missing values
+- Checking duplicates
+- Checking shapes of the datasets
+- Visualizing the columns of the train dataset
+- Hypothesis testing
+- Answering analytical questions with visualizations
+- Creating new features in order to answer analytical questioons
+
+### 4. Answering Questions with Visualizations
+
+**Questions:**
+
+- What is the overall churn rate of the telecommunication company?
+- What is the churn rate across the various regions?
+- What is the churn rate of custmers based on customer regularity?
+- What is the churn rate of customers based on their tenure?
+- What is the churn rate of customers based on the top_up amounts?
+- What is the churn rate of top pack users?
+- What is the churn rate based on the data volume?
+- What is the churn rate of custmers based on their income frequency?
+- What is the churn rate of customers based on their monthly income?
+- What is the relationship between the monthly income of customers and the frequency of recharge?
+- What is the relationship between the number of times a customer made an income and the number of times a customer activated the top pack?
+- What is the churn distribution of customers based on calls to Zone1 and Zone 2?
+- What is the churn distribution of customers based international calls, calls to Orange, and calls to Tigo?
+
+**Visualization Tools:**
+
+- Matplotlib
+- Seaborn
+
+### 5. Feature Engineering
+
+- Feature Selection
+- Data Sampling
+- Feature Extraction
+- Data Splitting
+- Imputation with SimpleImputer
+- Feature Encoding with LabelEncoder
+- Feature Scaling with StandardScaler
+- Class Balancing
+
+### 6. Model Training
+
+- Logistic Regression
+- Random Forest
+- Gradient Boosting
+- Adaptive Boosting
+- Support Vector Machine
+- Gaussian Naive Bayes
+
+### 7. Model Evaluation
+
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- Area Under the Curve (AUC) - Primary evaluation metric
+
+### 8. Hyperparameter Tuning
+
+The best model was tuned using GridSearchCV
+
+## Prediction on Test Dataset
+
+The best model was used to make predictions on the test dataset. A new 'CHURN' column was created on the dataset and filled with the churn predictions of each customer.
+
+## Submission
+
+A submission csv file was created bearing the user_id of each customer on the Test dataset and their churn predictions. This file was submitted on Zindi.
+
+### 9. Exportation
+
+- os
+- pickle
+
+## Deployment to Power BI
+
+The datasets were deployed to Power BI and nice visualizations were made. Click on the link below to see the Power BI visualizations.
+
+[EXPRESSO CUSTOMER CHURN DASHBOARD](https://app.powerbi.com/links/IkzpEY0uDL?ctid=4487b52f-f118-4830-b49d-3c298cb71075&pbi_source=linkShare)
 
 ## Setup
 
-To set up and run the apps in your local environment, follow these instructions:
+To set up and run the notebook, apps and API in your local environment, follow these instructions in your terminal/bash:
 
-1. Clone this repository to your local machine using the following command. Replace \<repository-url\> with the actual url to this repository:
+1. Clone this repository to your local machine. Replace \<repository-url\> with the actual url to this repository:
 
 ![Clone](Images/Readmepics/Clone.png)
 
@@ -82,7 +162,23 @@ To set up and run the apps in your local environment, follow these instructions:
 
 ![Requirements](Images/Readmepics/Requirements.png)
 
-4. Run the apps using the following commands:
+4. Install these ibraries in your virtual environment:
+
+* Gradio
+* Streamlit
+* FastAPI
+* Tabulate
+* Uvicorn
+* Pandas
+* Scikit-Learn
+
+These libraries can be installed by runing the following command in your terminal:
+
+![Installations](Images/Readmepics/Installations.png)
+
+## Run the Apps and Web API
+
+You can run the apps and API using the following commands:
 
 - For Gradio
 
@@ -96,9 +192,14 @@ To set up and run the apps in your local environment, follow these instructions:
 
 ![Run](Images/Readmepics/FastAPI_run.png)
 
-Each of the apps will be launched in your default web browser and can then be used to make predictions based on the customer information provided.
+Each of the apps and API will be launched in your default web browser and can then be used to make predictions based on the customer information provided.
 
-## Interfaces
+## Deployment to HuggingFace
+
+The apps and API were deployed to HuggingFace and can be accessed through the links below:
+[Expresso-Customer-Churn-Challenge-Gradio-App](https://huggingface.co/spaces/iameberedavid/Expresso-Customer-Churn-Challenge-Gradio-App)
+
+## Apps and API Interfaces
 
 ![Gradio](Images/Readmepics/Gradio.png)
 
@@ -106,11 +207,15 @@ Each of the apps will be launched in your default web browser and can then be us
 
 ![FastAPI](Images/Readmepics/FastAPI.png)
 
-## App and API Usage Instructions
+## Apps and API Usage Instructions
 
-Input Fields: The app displays input fields for the customer information.
-Prediction: Click the "Submit", "Predict Customer Churn", or "Execute" button to get a prediction based on the provided inputs on the Gradio, Streamlit or FAstAPI interface respectively.
-Results: The app will display whether the customer is likely to churn or not based on the customer data in the input field.
+- Description: Each app has a description that explains the inputs to be made in the Input Fields.
+
+- Input Fields: The apps will display input fields for the customer information.
+
+- Prediction: Click the "Submit", "Predict Customer Churn", or "Execute" button to get a prediction based on the provided inputs on the Gradio, Streamlit or FAstAPI interface respectively.
+
+- Results: Each app will display whether the customer is likely to churn or not based on the customer data in the input field.
 
 ## Authors
 
@@ -119,7 +224,7 @@ Results: The app will display whether the customer is likely to churn or not bas
 | Chidiebere David Ogbonna | [LinkedIn](https://www.linkedin.com/in/chidieberedavidogbonna/) | [GitHub](https://github.com/iameberedavid) | [Medium](https://eberedavid.medium.com) | eberedavid326@gmail.com |
 | George Manuel | [LinkedIn]() | [GitHub](https://github.com/George-Manuel) | [Medium]() |  |
 | Kwaku Twum-Ampofo | [LinkedIn]() | [GitHub](https://github.com/KwakuTwum) | [Medium]() |  |
-| Rucyaha Christian | [LinkedIn]() | [GitHub](https://github.com/Rucyaha) | [Medium]() |  |
+| Rucyaha Christian | [LinkedIn](www.linkedin.com/in/rucyaha-christian) | [GitHub](https://github.com/Rucyaha) | [LinkedIn](www.linkedin.com/in/rucyaha-christian) | rucyachris32@gmail.com |
 | Prince Agyei Asamoah | [LinkedIn](https://gh.linkedin.com/in/prince-asamoah) | [GitHub](https://github.com/Princeasamoah) | [Medium](https://medium.com/@prince.asamoah17) | prince.asamoah17@gmail.com |
 
 ## Acknowledgments
