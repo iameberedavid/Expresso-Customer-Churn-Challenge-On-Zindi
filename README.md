@@ -32,19 +32,19 @@ Below is a preview showcasing some features of the notebook.
         <p>Overall Churn Rate Of The Telecommunication Network</p>
         <img src="Images/Readmepics/Overall Churn Rate Of The Telecommunication Network.png" alt="Top" width="90%"/>
     </div>
-<div style="flex: 33.33%; text-align: center;">
+    <div style="flex: 33.33%; text-align: center;">
         <p>Churn Rate by Tenure</p>
         <img src="Images/Readmepics/Churn Rate by Tenure.png" alt="Middle" width="90%"/>
         </div>
-<div style="flex: 33.33%; text-align: center;">
+    <div style="flex: 33.33%; text-align: center;">
         <p>Churn Rate by Region</p>
         <img src="Images/Readmepics/Churn Rate by Region.png" alt="Middle" width="90%"/>
         </div>
-<div style="flex: 33.33%; text-align: center;">
+    <div style="flex: 33.33%; text-align: center;">
         <p>Confusion Matrix of the Best Model</p>
         <img src="Images/Readmepics/Confusion Matrix of the Best Model.png" alt="Middle" width="90%"/>
     </div>
-<div style="flex: 33.33%; text-align: center;">
+    <div style="flex: 33.33%; text-align: center;">
         <p>Precision-Recall Curve of the Best Model</p>
         <img src="Images/Readmepics/Precision-Recall Curve of the Best Model.png" alt="Bottom" width="90%"/>
     </div>
