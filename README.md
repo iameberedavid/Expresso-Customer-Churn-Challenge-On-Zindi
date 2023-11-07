@@ -19,7 +19,7 @@
 
 ## Project Description
 
-Welcome to the **Expresso Customer Churn Challenge On Zindi**. The aim of this challenge is to analyze the customer churn data of Expresso, a prominent telecommunication network. Afterwards, Machine Learning models will be trained to predict customer churn for the company using the customer churn data. The best model will be selected based on the AUC scores of the trained models. This best model will be used to make predictions on new customer data that it has not seen before. This will help the company monitor the churn tendencies of their customers, enabling them to know in advance the customers that are likely to churn, and make informed business decisions aimed at retaining these customers. The predictions, along with the user_ids of the customers on the new customer data, will be saved as a csv file for submission on Zindi.
+Welcome to **Expresso Customer Churn Challenge On Zindi**. The aim of this challenge is to analyze the customer churn data of Expresso, a prominent telecommunication network. Afterwards, Machine Learning models will be trained to predict customer churn for the company using the customer churn data. The best model will be selected based on the AUC scores of the trained models. This best model will be used to make predictions on new customer data that it has not seen before. This will help the company monitor the churn tendencies of their customers, enabling them to know in advance the customers that are likely to churn, and make informed business decisions aimed at retaining these customers. The predictions, along with the user_ids of the customers on the new customer data, will be saved as a csv file for submission on Zindi.
 
 The best model, along with other Machine Learning components (such as the imputer, encoder, and scaler) used to prepare the customer churn data for modelling will be exported using pickle. They will then be used to build user-friendly apps using Gradio and Streamlit libraries, as well as a FastAPI web interface. These will simplify the usage of the model to make customer churn predictions for new customers based on their available data. Finally, these apps and API will be containerized using docker and deployed to Huggingface to make them publicly available.
 
@@ -58,9 +58,7 @@ The project includes the following stages:
 
 - The datasets were downloaded directly from Zindi. They were not uploaded to the Github repository as it is against Zindi's rules to publicly upload competition datasets.
 
-### 2. Data Loading
-
-- Leveraging `pandas` for CSV files
+- These datasets were mounted on Google Drive for ease in loading and execution on Google Colab.
 
 ### 3. Exploratory Data Analysis (EDA)
 
@@ -92,10 +90,14 @@ The project includes the following stages:
 
 **Visualization Tools:**
 
+The following visualization tools were used to create visuals on the notebook:
+
 - Matplotlib
 - Seaborn
 
 ### 5. Feature Engineering
+
+The following feature engineering processes were carried out:
 
 - Feature Selection
 - Data Sampling
@@ -108,6 +110,8 @@ The project includes the following stages:
 
 ### 6. Model Training
 
+The following models were trained and evaluated using the training and validation sets:
+
 - Logistic Regression
 - Random Forest
 - Gradient Boosting
@@ -117,6 +121,8 @@ The project includes the following stages:
 
 ### 7. Model Evaluation
 
+The following metrics were used to evaluate the models:
+
 - Accuracy
 - Precision
 - Recall
@@ -125,7 +131,7 @@ The project includes the following stages:
 
 ### 8. Hyperparameter Tuning
 
-The best model was tuned using GridSearchCV
+The best model was tuned and isolated using GridSearchCV.
 
 ## Prediction on Test Dataset
 
@@ -136,6 +142,8 @@ The best model was used to make predictions on the test dataset. A new 'CHURN' c
 A submission csv file was created bearing the user_id of each customer on the Test dataset and their churn predictions. This file was submitted on Zindi.
 
 ### 9. Exportation
+
+The Machine Learning components (imputer, scaler, encoder, and best model) were exported with these libraries:
 
 - os
 - pickle
@@ -196,7 +204,8 @@ Each of the apps and API will be launched in your default web browser and can th
 
 ## Deployment to HuggingFace
 
-The apps and API were deployed to HuggingFace and can be accessed through the links below:
+The apps and API were deployed to HuggingFace. Click on the links below to acess them.
+
 [Expresso-Customer-Churn-Challenge-Gradio-App](https://huggingface.co/spaces/iameberedavid/Expresso-Customer-Churn-Challenge-Gradio-App)
 
 ## Apps and API Interfaces
