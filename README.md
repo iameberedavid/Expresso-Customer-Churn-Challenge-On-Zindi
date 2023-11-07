@@ -85,12 +85,15 @@ To set up and run the apps in your local environment, follow these instructions:
 4. Run the apps using the following commands:
 
 - For Gradio
+
 ![Run](Images/Readmepics/Gradio run.png)
 
 - For Streamlit
+
 ![Run](Images/Readmepics/Streamlit run.png)
 
 - For FastAPI
+
 ![Run](Images/Readmepics/FastAPI run.png)
 
 Each of the apps will be launched in your default web browser and can then be used to make predictions based on the customer information provided.
