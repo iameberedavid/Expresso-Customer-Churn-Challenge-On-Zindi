@@ -67,3 +67,30 @@ The libraries can be installed using the following command:
 ![Installations](Images/Readmepics/Installations.png)
 
 ## Setup
+
+To set up and run the apps in your local environment, follow these instructions:
+
+1. Clone this repository to your local machine using the following command. Replace \<repository-url\> with the actual url to this repository:
+
+![Clone](Images/Readmepics/Clone.png)
+
+2. Create and activate a virtual environment:
+
+![venv](Images/Readmepics/venv.png)
+
+3. Install requirements.txt:
+
+![Requirements](Images/Readmepics/Requirements.png)
+
+4. Run the apps using the following commands:
+
+- For Gradio
+![Run](Images/Readmepics/Gradio run.png)
+
+- For Streamlit
+![Run](Images/Readmepics/Streamlit run.png)
+
+- For FastAPI
+![Run](Images/Readmepics/FastAPI run.png)
+
+Each of the apps will be launched in your default web browser and can then be used to make predictions based on the customer information provided.
