@@ -25,11 +25,11 @@ The best model, along with other Machine Learning components (such as the impute
 
 ## Preview
 
-Below is a preview showcasing some features of the notebook.
+Below is a preview showcasing some features of the notebook:
 
 <div style="display: flex; align-items: center;">
     <div style="flex: 33.33%; text-align: center;">
-        <p>Overall Churn Rate Of The Telecommunication Network</p>
+        <p style="margin-top: 20px;">Overall Churn Rate Of The Telecommunication Network</p>
         <img src="Images/Readmepics/Overall Churn Rate Of The Telecommunication Network.png" alt="Top" width="90%"/>
     </div>
     <div style="flex: 33.33%; text-align: center;">
@@ -97,3 +97,36 @@ To set up and run the apps in your local environment, follow these instructions:
 ![Run](Images/Readmepics/FastAPI_run.png)
 
 Each of the apps will be launched in your default web browser and can then be used to make predictions based on the customer information provided.
+
+## Interfaces
+
+![Gradio](Images/Readmepics/Gradio.png)
+
+![Streamlit](Images/Readmepics/Streamlit.png)
+
+![FastAPI](Images/Readmepics/FastAPI.png)
+
+## App and API Usage Instructions
+
+Input Fields: The app displays input fields for the customer information.
+Prediction: Click the "Submit", "Predict Customer Churn", or "Execute" button to get a prediction based on the provided inputs on the Gradio, Streamlit or FAstAPI interface respectively.
+Results: The app will display whether the customer is likely to churn or not based on the customer data in the input field.
+
+## Authors
+
+| Name                | LinkedIn Profile                                                                                                                                                                                                                                   | Medium Profile |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- |
+| Chidiebere David Ogbonna | [Chidiebere David Ogbonna](https://www.linkedin.com/in/chidieberedavidogbonna/) |[Building an Interactive Telco Churn Prediction App with Gradio and Hugging Face](https://eberedavid.medium.com/embedding-telco-churn-machine-learning-model-in-gradio-1fb9df22d4a2)|
+|                          |                                                                                                                                                                                                                                            |        |
+
+## Acknowledgments
+
+We would like to express our gratitude to the [Azubi Africa Data Analyst Program](https://www.azubiafrica.org/data-analytics) for their support and for offering valuable projects as part of this program. Not forgeting our scrum masters [Rachel Appiah-Kubi](https://www.linkedin.com/in/racheal-appiah-kubi/) & [Emmanuel Koupoh](https://github.com/eaedk)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+## Contact
+
+For questions, feedback, and collaborations, please contact [Chidiebere David Ogbonna](eberedavid326@gmail.com).
