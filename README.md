@@ -116,11 +116,11 @@ Results: The app will display whether the customer is likely to churn or not bas
 
 | Name | Profile | Portfolio | Articles | Contact |
 | ---- | ------- | --------- | -------- | ------- |
-| Chidiebere David Ogbonna | [LinkedIn](https://www.linkedin.com/in/chidieberedavidogbonna/) | [GitHub](https://github.com/iameberedavid) | [Medium](https://eberedavid.medium.com) |  |
-| George Manuel | [LinkedIn](https://www.linkedin.com/in/johnsmith/) | [GitHub](https://github.com/George-Manuel) |  |  |
-| Prince Agyei Asamoah | [LinkedIn](https://gh.linkedin.com/in/prince-asamoah) | [GitHub](https://github.com/Princeasamoah) | [Medium](https://medium.com/janedoe) |  |
-| Alice Johnson | [LinkedIn](https://www.linkedin.com/in/alicejohnson/) | [GitHub]() | [Medium](https://medium.com/alicejohnson) |  |
-| Alice Johnson | [LinkedIn](https://www.linkedin.com/in/alicejohnson/) | [GitHub]() | [Medium](https://medium.com/alicejohnson) |  |
+| Chidiebere David Ogbonna | [LinkedIn](https://www.linkedin.com/in/chidieberedavidogbonna/) | [GitHub](https://github.com/iameberedavid) | [Medium](https://eberedavid.medium.com) | eberedavid326@gmail.com |
+| George Manuel | [LinkedIn]() | [GitHub](https://github.com/George-Manuel) | [Medium]() |  |
+| Kwaku Twum-Ampofo | [LinkedIn]() | [GitHub](https://github.com/KwakuTwum) | [Medium]() |  |
+| Rucyaha Christian | [LinkedIn]() | [GitHub](https://github.com/Rucyaha) | [Medium]() |  |
+| Prince Agyei Asamoah | [LinkedIn](https://gh.linkedin.com/in/prince-asamoah) | [GitHub](https://github.com/Princeasamoah) | [Medium](https://medium.com/@prince.asamoah17) | prince.asamoah17@gmail.com |
 
 ## Acknowledgments
 
@@ -132,4 +132,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Contact
 
-For questions, feedback, and collaborations, please contact [Chidiebere David Ogbonna](eberedavid326@gmail.com).
+For questions, feedback, and collaborations, please send a mail to: eberedavid326@gmail.com
