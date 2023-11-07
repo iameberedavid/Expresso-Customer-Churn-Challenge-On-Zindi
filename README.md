@@ -23,7 +23,7 @@ Welcome to the **Expresso Customer Churn Challenge On Zindi**. The aim of this c
 
 The best model, along with other Machine Learning components (such as the imputer, encoder, and scaler) used to prepare the customer churn data for modelling will be exported using pickle. They will then be used to build user-friendly apps using Gradio and Streamlit libraries, as well as a FastAPI web interface. These will simplify the usage of the model to make customer churn predictions for new customers based on their available data. Finally, these apps and API will be containerized using docker and deployed to Huggingface to make them publicly available.
 
-## Preview 🔍
+## Preview
 
 Below is a preview showcasing some features of the notebook.
 
