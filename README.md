@@ -19,7 +19,7 @@
 
 ## Project Description
 
-Welcome to **Expresso Customer Churn Challenge On Zindi**. The aim of this challenge is to analyze the customer churn data of Expresso, a prominent telecommunication network. Afterwards, Machine Learning models will be trained to predict customer churn for the company using the customer churn data. The best model will be selected based on the AUC scores of the trained models. This best model will be used to make predictions on new customer data that it has not seen before. This will help the company monitor the churn tendencies of their customers, enabling them to know in advance the customers that are likely to churn, and make informed business decisions aimed at retaining these customers. The predictions, along with the user_ids of the customers on the new customer data, will be saved as a csv file for submission on Zindi.
+Welcome to **Expresso Customer Churn Challenge On Zindi**. The aim of this challenge is to analyze the customer churn data of Expresso, a prominent African telecommunications company that provides customers with airtime and mobile data bundles. Afterwards, Machine Learning models will be trained to predict customer churn for the company using the customer churn data. The best model will be selected based on the AUC scores of the trained models. This best model will be used to make predictions on new customer data that it has not seen before. This will help the company monitor the churn tendencies of their customers, enabling them to know in advance the customers that are likely to churn, and make informed business decisions aimed at retaining these customers. The predictions, along with the user_ids of the customers on the new customer data, will be saved as a csv file for submission on Zindi.
 
 The best model, along with other Machine Learning components (such as the imputer, encoder, and scaler) used to prepare the customer churn data for modelling will be exported using pickle. They will then be used to build user-friendly apps using Gradio and Streamlit libraries, as well as a FastAPI web interface. These will simplify the usage of the model to make customer churn predictions for new customers based on their available data. Finally, these apps and API will be containerized using docker and deployed to Huggingface to make them publicly available.
 
@@ -78,15 +78,10 @@ The project includes the following stages:
 - What is the churn rate across the various regions?
 - What is the churn rate of custmers based on customer regularity?
 - What is the churn rate of customers based on their tenure?
-- What is the churn rate of customers based on the top_up amounts?
-- What is the churn rate of top pack users?
-- What is the churn rate based on the data volume?
-- What is the churn rate of custmers based on their income frequency?
-- What is the churn rate of customers based on their monthly income?
-- What is the relationship between the monthly income of customers and the frequency of recharge?
-- What is the relationship between the number of times a customer made an income and the number of times a customer activated the top pack?
+- What is the churn rate of the least 10,000 and top 10,000 customers based on the top_up amounts ['MONTANT']?
+- What is the churn rate of the least 10,000 and top 10,000 customers based on the number of connections ['DATA_VOLUME']?
 - What is the churn distribution of customers based on calls to Zone1 and Zone 2?
-- What is the churn distribution of customers based international calls, calls to Orange, and calls to Tigo?
+- What is the churn distribution of customers based on calls within Expresso Network, calls to Orange Network, and calls to Tigo Network?
 
 **Visualization Tools:**
 
