@@ -19,8 +19,7 @@ encoder = ml_components_dict['encoder']
 model = ml_components_dict['model']
 
 # Define a Gradio function to make predictions
-def predict_churn(TENURE, MONTANT, FREQUENCE_RECH, REVENUE, ARPU_SEGMENT, FREQUENCE, DATA_VOLUME, ON_NET,
-                  ORANGE, TIGO, REGULARITY, FREQ_TOP_PACK):
+def predict_churn(TENURE, MONTANT, FREQUENCE_RECH, DATA_VOLUME, ON_NET, ORANGE, TIGO, REGULARITY):
     
     # Set 'K > 24 month' as the default selection as the imputer can only work on numerical values
     if TENURE is None:
@@ -31,23 +30,18 @@ def predict_churn(TENURE, MONTANT, FREQUENCE_RECH, REVENUE, ARPU_SEGMENT, FREQUE
         'TENURE': [TENURE],
         'MONTANT': [MONTANT],
         'FREQUENCE_RECH': [FREQUENCE_RECH],
-        'REVENUE': [REVENUE],
-        'ARPU_SEGMENT': [ARPU_SEGMENT],
-        'FREQUENCE': [FREQUENCE],
         'DATA_VOLUME': [DATA_VOLUME],
         'ON_NET': [ON_NET],
         'ORANGE': [ORANGE],
         'TIGO': [TIGO],
-        'REGULARITY': [REGULARITY],
-        'FREQ_TOP_PACK': [FREQ_TOP_PACK]
+        'REGULARITY': [REGULARITY]
     }
 
     # Create a DataFrame from the input data
     df = pd.DataFrame(data)
 
     # Separate the categorical and numerical features
-    numerical_features = ['MONTANT', 'FREQUENCE_RECH', 'REVENUE', 'ARPU_SEGMENT', 'FREQUENCE', 'DATA_VOLUME',
-                          'ON_NET', 'ORANGE', 'TIGO', 'REGULARITY', 'FREQ_TOP_PACK']
+    numerical_features = ['MONTANT', 'FREQUENCE_RECH', 'DATA_VOLUME', 'ON_NET', 'ORANGE', 'TIGO', 'REGULARITY']
     categorical_features = ['TENURE']
 
     # Impute missing values
@@ -78,22 +72,18 @@ TENURE = gr.Radio(choices=['K > 24 month', 'E 6-9 month', 'H 15-18 month', 'G 12
              'J 21-24 month', 'F 9-12 month', 'D 3-6 month'], label='TENURE')
 MONTANT = gr.Number(label='MONTANT')
 FREQUENCE_RECH = gr.Number(label='FREQUENCE_RECH')
-REVENUE = gr.Number(label='REVENUE')
-ARPU_SEGMENT = gr.Number(label='ARPU_SEGMENT')
-FREQUENCE = gr.Number(label='FREQUENCE')
 DATA_VOLUME = gr.Number(label='DATA_VOLUME')
 ON_NET = gr.Number(label='ON_NET')
 ORANGE = gr.Number(label='ORANGE')
 TIGO = gr.Number(label='TIGO')
 REGULARITY = gr.Number(label='REGULARITY')
-FREQ_TOP_PACK = gr.Number(label='FREQ_TOP_PACK')
 
 # Design the interface
-gr.Interface(inputs=[TENURE, MONTANT, FREQUENCE_RECH, REVENUE, ARPU_SEGMENT, FREQUENCE, DATA_VOLUME, ON_NET,
-                  ORANGE, TIGO, REGULARITY, FREQ_TOP_PACK],
+gr.Interface(inputs=[TENURE, MONTANT, FREQUENCE_RECH, DATA_VOLUME, ON_NET,
+                  ORANGE, TIGO, REGULARITY],
     outputs=gr.Label('Awaiting Submission...'),
     fn=predict_churn,
-    title='Customer Churn Prediction',
+    title='Expresso Customer Churn Prediction',
     description="This app predicts whether a telecommunication network's customer will churn or not. "
                 "It requires the following customer data to make predictions.\n"
                 "<div style='display: flex; justify-content: space-between;'>"
@@ -101,17 +91,13 @@ gr.Interface(inputs=[TENURE, MONTANT, FREQUENCE_RECH, REVENUE, ARPU_SEGMENT, FRE
                 "1. TENURE: The customer's duration on the network.<br>"
                 "2. MONTANT: The customer's top-up amount.<br>"
                 "3. FREQUENCE_RECH: The number of times the customer recharged.<br>"
-                "4. REVENUE: Monthly income of each customer.<br>"
-                "5. ARPU_SEGMENT: Customer's average income over 90 days.<br>"
-                "6. FREQUENCE: The number of times the customer made an income."
+                "4. DATA_VOLUME: The customer's number of connections."
                 "</div>"
                 "<div style='flex: 1;'>"
-                "7. DATA_VOLUME: The customer's number of connections.<br>"
-                "8. ON_NET: The customer's calls within Expresso network.<br>"
-                "9. ORANGE: The customer's calls to Orange network.<br>"
-                "10. TIGO: The customer's calls to Tigo network.<br>"
-                "11. REGULARITY: The number of times the customer has been active for 90 days.<br>"
-                "12. FREQ_TOP_PACK: The number of times the customer activated top pack packages."
+                "5. ON_NET: The customer's calls within Expresso network.<br>"
+                "6. ORANGE: The customer's calls to Orange network.<br>"
+                "7. TIGO: The customer's calls to Tigo network.<br>"
+                "8. REGULARITY: The number of times the customer has been active for 90 days."
                 "</div>"
                 "</div>"
 ).launch(inbrowser=True, show_error=True, share=True)
