@@ -236,7 +236,7 @@ The apps and API were deployed to HuggingFace. Click on the links below to acess
 | Rucyaha Christian | [LinkedIn](www.linkedin.com/in/rucyaha-christian) | [GitHub](https://github.com/Rucyaha) | [LinkedIn](www.linkedin.com/in/rucyaha-christian) | rucyachris32@gmail.com |
 | Prince Agyei Asamoah | [LinkedIn](https://gh.linkedin.com/in/prince-asamoah) | [GitHub](https://github.com/Princeasamoah) | [Medium](https://medium.com/@prince.asamoah17) | prince.asamoah17@gmail.com |
 
-## Acknowledgments
+## Acknowledgment
 
 We would like to express our gratitude to the [Azubi Africa Data Analyst Program](https://www.azubiafrica.org/data-analytics) for their support and for offering valuable projects as part of this program. Not forgeting our scrum masters [Rachel Appiah-Kubi](https://www.linkedin.com/in/racheal-appiah-kubi/) & [Emmanuel Koupoh](https://github.com/eaedk)
 
