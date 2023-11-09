@@ -116,7 +116,7 @@ The following models were trained and evaluated using the training and validatio
 - Random Forest
 - Gradient Boosting
 - Adaptive Boosting
-- Support Vector Machine
+- Decision Tree
 - Gaussian Naive Bayes
 
 ### 7. Model Evaluation
