@@ -231,8 +231,8 @@ The apps and API were deployed to HuggingFace. Click on the links below to acess
 | Name | Profile | Portfolio | Articles | Contact |
 | ---- | ------- | --------- | -------- | ------- |
 | Chidiebere David Ogbonna | [LinkedIn](https://www.linkedin.com/in/chidieberedavidogbonna/) | [GitHub](https://github.com/iameberedavid) | [Medium](https://eberedavid.medium.com) | eberedavid326@gmail.com |
-| George Manuel | [LinkedIn]() | [GitHub](https://github.com/George-Manuel) | [Medium]() |  |
-| Kwaku Twum-Ampofo | [LinkedIn]() | [GitHub](https://github.com/KwakuTwum) | [Medium]() |  |
+| George Manuel | [LinkedIn](www.linkedin.com/in/george-manuel95) | [GitHub](https://github.com/George-Manuel) | [Medium](george-manuel.medium.com) | georgemanuel1990.gm@gmail.com |
+| Kwaku Twum-Ampofo | [LinkedIn](https://www.linkedin.com/in/kwaku-twum-ampofo/) | [GitHub](https://github.com/KwakuTwum) | [Medium](https://medium.com/@ktwumampofo77) | ktwumampofo77@gmail.com |
 | Rucyaha Christian | [LinkedIn](www.linkedin.com/in/rucyaha-christian) | [GitHub](https://github.com/Rucyaha) | [LinkedIn](www.linkedin.com/in/rucyaha-christian) | rucyachris32@gmail.com |
 | Prince Agyei Asamoah | [LinkedIn](https://gh.linkedin.com/in/prince-asamoah) | [GitHub](https://github.com/Princeasamoah) | [Medium](https://medium.com/@prince.asamoah17) | prince.asamoah17@gmail.com |
 
