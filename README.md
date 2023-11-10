@@ -149,6 +149,10 @@ The datasets were deployed to Power BI and nice visualizations were made. Click 
 
 [EXPRESSO CUSTOMER CHURN DASHBOARD](https://app.powerbi.com/links/CApE4lsWrA?ctid=4487b52f-f118-4830-b49d-3c298cb71075&pbi_source=linkShare)
 
+This is how the Power Bi interface looks like
+
+![PowerBI](Images/Readmepics/PowerBI.png)
+
 ## Setup
 
 To set up and run the notebook, apps and API in your local environment, follow these instructions in your terminal/bash:
