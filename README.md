@@ -147,7 +147,7 @@ The Machine Learning components (imputer, scaler, encoder, and best model) were 
 
 The datasets were deployed to Power BI and nice visualizations were made. Click on the link below to see the Power BI visualizations.
 
-[EXPRESSO CUSTOMER CHURN DASHBOARD](https://app.powerbi.com/links/IkzpEY0uDL?ctid=4487b52f-f118-4830-b49d-3c298cb71075&pbi_source=linkShare)
+[EXPRESSO CUSTOMER CHURN DASHBOARD](https://app.powerbi.com/links/CApE4lsWrA?ctid=4487b52f-f118-4830-b49d-3c298cb71075&pbi_source=linkShare)
 
 ## Setup
 
