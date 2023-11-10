@@ -136,7 +136,7 @@ The best model was used to make predictions on the test dataset. A new 'CHURN' c
 
 A submission csv file was created bearing the user_id of each customer on the Test dataset and their churn predictions. This file was submitted on Zindi.
 
-### 9. Exportation
+## Exportation
 
 The Machine Learning components (imputer, scaler, encoder, and best model) were exported with these libraries:
 
