@@ -217,7 +217,7 @@ The apps and API were deployed to HuggingFace. Click on the links below to acess
 
 - Input Fields: The apps will display input fields for the customer information.
 
-- Prediction: Click the "Submit", "Predict Customer Churn", or "Execute" button to get a prediction based on the provided inputs on the Gradio, Streamlit or FAstAPI interface respectively.
+- Prediction: Click the "Submit", "Predict Customer Churn", or "Execute" button to activate the data preprocessing phase leading to churn prediction on the Gradio, Streamlit or FAstAPI interface respectively.
 
 - Results: Each app will display whether the customer is likely to churn or not based on the customer data in the input field.
 
