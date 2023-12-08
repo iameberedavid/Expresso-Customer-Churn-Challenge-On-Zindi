@@ -1,6 +1,6 @@
 # EXPRESSO CUSTOMER CHURN CHALLENGE ON ZINDI
 
-## Technologies
+## Technology
 
 ![Data Analysis](https://img.shields.io/badge/Data-Analysis-blue)
 ![Machine Learning](https://img.shields.io/badge/Machine-Learning-blue)
