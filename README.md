@@ -235,13 +235,13 @@ The apps and API were deployed to HuggingFace. Click on the links below to acess
 | Rucyaha Christian | [LinkedIn](www.linkedin.com/in/rucyaha-christian) | [GitHub](https://github.com/Rucyaha) | [LinkedIn](www.linkedin.com/in/rucyaha-christian) | rucyachris32@gmail.com |
 | Prince Agyei Asamoah | [LinkedIn](https://gh.linkedin.com/in/prince-asamoah) | [GitHub](https://github.com/Princeasamoah) | [Medium](https://medium.com/@prince.asamoah17) | prince.asamoah17@gmail.com |
 
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
 ## Acknowledgment
 
 We would like to express our gratitude to the [Azubi Africa Data Analyst Program](https://www.azubiafrica.org/data-analytics) for offering valuable projects as part of this program. Not forgeting our scrum masters [Rachel Appiah-Kubi](https://github.com/coderacheal) & [Emmanuel Koupoh](https://github.com/eaedk) for their support throughout this program.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Contact
 
