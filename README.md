@@ -227,8 +227,8 @@ The apps and API were deployed to HuggingFace. Click on the links below to acess
 
 ## Authors
 
-| Name | Profile | Portfolio | Articles | Contact |
-| ---- | ------- | --------- | -------- | ------- |
+| Name | Profile | Portfolio | Article | Contact |
+| ---- | ------- | --------- | ------- | ------- |
 | Chidiebere David Ogbonna | [LinkedIn](https://www.linkedin.com/in/chidieberedavidogbonna/) | [GitHub](https://github.com/iameberedavid) | [Medium](https://eberedavid.medium.com) | eberedavid326@gmail.com |
 | George Manuel | [LinkedIn](www.linkedin.com/in/george-manuel95) | [GitHub](https://github.com/George-Manuel) | [Medium](george-manuel.medium.com) | georgemanuel1990.gm@gmail.com |
 | Kwaku Twum-Ampofo | [LinkedIn](https://www.linkedin.com/in/kwaku-twum-ampofo/) | [GitHub](https://github.com/KwakuTwum) | [Medium](https://medium.com/@ktwumampofo77) | ktwumampofo77@gmail.com |
