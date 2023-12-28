@@ -237,7 +237,7 @@ The apps and API were deployed to HuggingFace. Click on the links below to acess
 
 ## Acknowledgment
 
-We would like to express our gratitude to the [Azubi Africa Data Analyst Program](https://www.azubiafrica.org/data-analytics) for their support and for offering valuable projects as part of this program. Not forgeting our scrum masters [Rachel Appiah-Kubi](https://www.linkedin.com/in/racheal-appiah-kubi/) & [Emmanuel Koupoh](https://github.com/eaedk)
+We would like to express our gratitude to the [Azubi Africa Data Analyst Program](https://www.azubiafrica.org/data-analytics) for offering valuable projects as part of this program. Not forgeting our scrum masters [Rachel Appiah-Kubi](https://github.com/coderacheal) & [Emmanuel Koupoh](https://github.com/eaedk) for their support throughout this program.
 
 ## License
 
